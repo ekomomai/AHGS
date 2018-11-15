@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  font-family: "montserrat", "Helvetica Neue", Helvetica, "Arial", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+
+/*layout
+------------------------------------------------------*/
+@media screen and (min-width: 860px) {
+	.container {
+		width: 800px;
+	}
+}
+
+/*header
+------------------------------------------------------*/
+header {
+	padding: 10px 0 30px;
+}
+.logo {
+	float: left;
+	margin-bottom: 20px;
+}
+.logo img {
+	height: 40px;
+}
+.add-btn {
+	clear: both;
+	text-align: center;
+}
+.c-btn a,
+.c-btn input {
+	padding: 10px 20px;
+	color: #fff;
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-align: center;
+	width: 100%;
+    background: none;
+    border: none;
+}
+.btn-area {
+	padding: 15px 15px 30px;
+}
+
+@media screen and (min-width: 768px) {
+.complete .logo {
+	float: none;
+	text-align: center;
+}
+header {
+	padding: 20px 0 10px;
+}
+.logo img {
+	height: 60px;
+}
+.add-btn {
+	clear: none;
+	float: right;
+	margin-top: 5px;
+}
+}
+/*common
+------------------------------------------------------*/
+a:hover {
+	text-decoration: none;
+}
+.bg-blue {
+	background: linear-gradient(#28a2e0, #0082c4);	
+}
+.bg-blue2 {
+	background: linear-gradient(#fff, #cfefff);	
+}
+.bg-blue3 {
+	background: linear-gradient(#164cad, #002d7f);
+}
+.bg-gray {
+	background: linear-gradient(#aaa, #777);
+}
+.radius {
+	border-radius: 10px;	
+}
+#user-detail {
+	width: 100%;
+}
+.dl-responsive dt {
+	font-weight: normal;
+	color: #0082c4;
+	padding: 20px 10px 0px;
+	margin:0;
+}
+.dl-responsive dd {
+	border-bottom: 1px solid #0082c4;
+	padding: 20px 10px;
+	margin:0;
+}
+.title1 {
+	padding: 10px 10px 15px; 
+	color: #073a7c;
+	border-bottom: 2px solid #073a7c;
+	font-size: 1.4rem;
+}
+.mar-auto {
+	margin: 0 auto
+}
+input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+input[type=textarea] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+label {
+	margin-right: 10px;
+}
+label input {
+	margin-right: 3px;
+}
+@media screen and (min-width: 768px) {
+#user-detail {
+	width: 600px;
+	margin: 0 auto;
+}
+.dl-responsive dt {
+	clear: both;
+	float: left;
+	width: 180px;
+}
+.dl-responsive dd {
+	padding-left: 180px;
+    min-height: 65px;
+}
+}
+/*article
+------------------------------------------------------*/
+article {
+	padding-bottom: 30px;
+	clear: both;
+}
+.user-link {
+	padding: 15px 0;
+	margin-bottom: 30px;
+	border: 1px solid #0082c4;
+	display: block;
+	text-align: center;
+	color: #073a7c;
+}
+
+#layer {
+    display: none;  /* 初期表示は非表示 */
+    position: absolute; 
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.20;
+}
+#popup {
+    display: none;  /* 初期表示は非表示 */
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
